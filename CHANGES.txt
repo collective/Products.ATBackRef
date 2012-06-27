@@ -1,0 +1,16 @@
+Changelog
+=========
+
+2.2 - Unreleased
+----------------
+
+- Remove tabindex and old msgid calls from skin templates.
+  [saily]
+
+
+2.1 - 2010-10-12
+----------------
+
+- make it ready for Plone 3
+
+- remove old school Install, use GS profile instead, eggified.
