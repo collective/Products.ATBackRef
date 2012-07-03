@@ -8,8 +8,8 @@ def read(*rnames):
 version = '2.2'
 shortdesc = "Back Reference Field/Widget for Plone/Archetypes"
 longdesc = "\n\n".join([
-    read('docs', 'README.txt'),
-    read('docs', 'HISTORY.txt'),
+    read('README.txt'),
+    read('CHANGES.txt'),
 ])
 
 setup(name='Products.ATBackRef',
