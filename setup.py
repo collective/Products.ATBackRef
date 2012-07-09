@@ -8,7 +8,7 @@ def read(*rnames):
 version = '2.2'
 shortdesc = "Back Reference Field/Widget for Plone/Archetypes"
 longdesc = "\n\n".join([
-    read('README.txt'),
+    read('README.rst'),
     read('CHANGES.txt'),
 ])
 

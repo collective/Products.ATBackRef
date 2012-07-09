@@ -88,3 +88,4 @@ Contributors
 - Kai Diefenbach - make it ready for Plone 3
 - Jens Klein - remove old school Install, use GS profile instead, eggified.
 - Daniel Widerin
+- Peter Holzer
