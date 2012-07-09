@@ -9,7 +9,7 @@
   <body>
 
     <metal:view_macro define-macro="view">
-      <tal:define define="refs               python:field.getBackReferenceImpl(here);
+      <tal:define define="refs               python:field.getBackReferenceImpl(targetObject=here);
                           image_portal_types field/widget/image_portal_types;
                           image_method       field/widget/image_method|string:;
                           show_path          field/widget/show_path|nothing;
