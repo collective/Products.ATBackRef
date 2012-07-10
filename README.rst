@@ -69,10 +69,10 @@ Comaptibility
 
 Works with Plone 3 - 4.1.x, works with Chameleon.
 
-Licence
+License
 =======
 
-copyright 2004-2009 BlueDynamics Alliance, Austria
+copyright 2004-2012 BlueDynamics Alliance, Austria
 
 GNU General Public License Version 2 or later
 
