@@ -5,7 +5,7 @@ import sys, os
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '2.2'
+version = '2.3dev'
 shortdesc = "Back Reference Field/Widget for Plone/Archetypes"
 longdesc = "\n\n".join([
     read('README.rst'),
@@ -31,7 +31,7 @@ setup(name='Products.ATBackRef',
       keywords='',
       author='Phil Auersperg, Jens Klein, et al',
       author_email='dev@bluedynamics.com',
-      url='https://svn.plone.org/svn/archetypes/MoreFieldsAndWidgets/ATBackRef',
+      url='https://github.com/collective/Products.ATBackRef',
       license='GNU General Public License GPL 2.0',
       packages=find_packages('src'),
       package_dir={'': 'src'},
