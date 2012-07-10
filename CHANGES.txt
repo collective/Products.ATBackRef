@@ -1,8 +1,11 @@
 Changelog
 =========
 
-2.2 - Unreleased
+2.2 - 2012-07-10
 ----------------
+
+- Works now under Plone 4.2 with LinugaPlone, thanx to [zworkb]
+  [hpeteragitator]
 
 - Remove tabindex and old msgid calls from skin templates.
   [saily]
