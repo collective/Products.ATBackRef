@@ -15,7 +15,7 @@
                           show_path          field/widget/show_path|nothing;
                           portal_path        python: '/'.join(context.portal_url.getPortalObject().getPhysicalPath());
                           hide_inaccessible  field/widget/hide_inaccessible | nothing;"
-                  condition="refs">
+                  condition="refs" tal:on-error="python:field.getBackReferenceImpl">
 
         <tal:block tal:condition="python: not field.multiValued and (can_view or not hide_inaccessible)"
                tal:define="ref python:refs[0];

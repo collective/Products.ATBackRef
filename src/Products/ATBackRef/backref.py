@@ -138,13 +138,14 @@ class BackReferenceField(ReferenceField):
             return None
         return res
 
-    def getBackReferenceImpl(self, instance):
+    def getBackReferenceImpl(self, targetObject):
         """
         Get the references efficiently, sorting if possible.
         
         If we are not using orderablereferencefield we don't have the
         order attribute we swallow this error silently.
         """
+        instance=targetObject
         refs = instance.getBackReferenceImpl(self.relationship)
         try:
             refs.sort(key=lambda ref: ref.order)
