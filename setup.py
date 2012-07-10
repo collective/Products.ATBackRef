@@ -5,7 +5,7 @@ import sys, os
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '2.2'
+version = '2.3dev'
 shortdesc = "Back Reference Field/Widget for Plone/Archetypes"
 longdesc = "\n\n".join([
     read('README.rst'),
