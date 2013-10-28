@@ -108,9 +108,10 @@ class BackReferenceField(ReferenceField):
 
         for uid in add:
             __traceback_info__ = (instance, uid, value, targetUIDs)
-            # throws IndexError if uid is invalid
-            tool.addReference(tool.lookupObject(uid), instance.UID(), 
-                              self.relationship, **addRef_kw)
+            if uid:
+                # throws IndexError if uid is invalid
+                tool.addReference(tool.lookupObject(uid), instance.UID(), 
+                                  self.relationship, **addRef_kw)
 
         for uid in sub:
             tool.deleteReference(tool.lookupObject(uid), instance.UID(), 
