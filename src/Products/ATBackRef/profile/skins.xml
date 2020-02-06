@@ -5,10 +5,10 @@
 
  <object name="ATBackRef"
          meta_type="Filesystem Directory View"
-         directory="ATBackRef/skins/ATBackRef"/>
- 
+         directory="Products.ATBackRef:skins/ATBackRef"/>
+
  <skin-path name="*">
-  <layer insert-after="custom" 
+  <layer insert-after="custom"
          name="ATBackRef"/>
  </skin-path>
 
