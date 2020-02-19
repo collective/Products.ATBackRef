@@ -153,12 +153,12 @@
 -->
               <ul class="visualNoMarker"
                   tal:attributes="id string:${fieldName};">
-                <li tal:repeat="set targets">
-                  <label tal:define="title    python: set[0].title_or_id();
-                                     obj_path python: '/'.join(set[0].getPhysicalPath());">
+                <li tal:repeat="item targets">
+                  <label tal:define="title    python: item[0].title_or_id();
+                                     obj_path python: '/'.join(item[0].getPhysicalPath());">
                     <input type="checkbox"
                            tal:attributes="name string:${fieldName}:list;
-                                           value python:set[1];"
+                                           value python:item[1];"
                            checked="checked" />
                     <tal:block replace="python: show_path and '%s (%s)' % (title, obj_path.replace(portal_path, '')) or title" />
                   </label>
